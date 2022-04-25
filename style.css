@@ -1,0 +1,140 @@
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow .5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('pictures/800px-Little_Princesses.png');
+    /* Full height */
+    height: 50%;
+    width: 300%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  button{
+      background-color: #fc4ba3; 
+      border: none;
+      font-size: large;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow:5px 5px 5px #fefefe;
+      padding: 10px;
+  }
+  a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+  button:hover{
+    background-color: #f91888;
+  }
+  body{
+      background-color:pink;
+  }
+  .img{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+  }
+  /* Services */
+
+.services {
+    display:flex;
+    flex-wrap: wrap;
+}
+.services__item{
+    padding: 0 35px 40px 85px;
+    position: relative;
+    margin: 50px 0;
+}
+
+.services__icon{
+    width:40px;
+    position: absolute;
+    left:30px;
+    top:0;
+    z-index: 1;
+}
+.services__title{
+    display:inline-flex;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(250, 27, 209);
+    text-transform: uppercase;
+    padding-left: 100px;
+    width: 300px;
+}
+.services__title:hover{
+    color:blue;
+}
+/* Section */
+
+.section {
+    padding:0 180px;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Vollkorn';
+    font-size: 24px;
+    color:#333;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(243, 52, 208);
+    font-family: "Comic Sans MS";
+    box-shadow: 5px 5px 5px #e60073;
+    border-radius: 20px;
+}
+
+/*88888888888888888888888888888*/
+img{
+    transform: scale(3);
+}
+#one,#two,#three,#four{
+    white-space: nowrap;
+}
+.container{
+    min-width: 600px;
+}
